@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+/*공통처리*/
+.blur-box:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* 정사각형일 경우 100%, 원하는 비율에 맞춰 padding-top값 조절하면 됨*/
+}
+#fp-nav{display: none;}
+#fp-nav ul li .fp-tooltip{display: none;}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span{background-color: black;}
+#fp-nav ul li:first-of-type{display: none;}
+
+/*모바일 기본*/
+header{width: 100%; height: 80px; position: fixed; top: 0; left: 0; z-index: 99; background-color: #fff;}
+header nav ul{display: flex; justify-content: space-between;}
+header nav ul li{margin: 0 3px;}
+header nav ul li a{font-size: 12px; transition: all 0.3s;}
+header nav ul li:hover a{color: #F290A2;}
+
+.intro .inner{position: relative;}
+.intro .blur-box{
+width: 60%; height: 60%; margin: 0 auto;
+background: radial-gradient(ellipse at center, rgba(248,231,234,1) 0%,rgba(248,231,234,1) 35%,rgba(248,231,234,0) 70%,rgba(248,231,234,0) 100%);
+animation-name: opacity; animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite;
+transition: all 0.3s;
+}
+.intro .txt-box{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+text-align: center;}
+.intro .txt-box h1{font-size: 32px;}
+
+.aboutme h2{text-align: center; font-size: 28px;}
+.aboutme .profile{margin: 30px auto 0; text-align: center;}
+.aboutme .profile .photo{position: relative;}
+.aboutme .profile .photo .blur-box{
+ width: 50%;
+background: radial-gradient(ellipse at center, rgba(248,231,234,1) 0%,rgba(248,231,234,1) 35%,rgba(248,231,234,0) 70%,rgba(248,231,234,0) 100%);
+position: absolute; top: -20px; left: 18%; z-index: -9;
+}
+.aboutme .profile .photo img{width: 40%; height: 40%; display: block; margin: 0 auto;}
+.aboutme .profile .name{font-weight: bold; font-size: 18px; padding-top: 20px;}
+.aboutme .profile .name span{font-size: 14px;}
+.aboutme .profile .b-day{font-size: 12px;}
+.aboutme .profile .txt-box{margin-top: 20px;}
+.aboutme .tags{margin-top: 30px;}
+.aboutme .tags ul{display: flex; flex-wrap: wrap; justify-content: center;}
+.aboutme .tags ul li{padding: 10px; background-color: #F8E7EA; border-radius: 50px; margin: 5px; line-height: 1;
+box-shadow:0 2px 2px rgba(0, 0, 0, 0.5); transition: all 0.3s;}
+.aboutme .tags ul li:hover{transform: scale(1.1);}
+
+.skills{font-size: 28px;}
+.skills h2{text-align: center; font-size: 28px;}
+.skills .icons{display: flex; flex-wrap: wrap; justify-content: center; max-width: 400px; margin: 0 auto; margin-top: 50px;}
+.skills .icons li img{display: block; width: 64px; margin: 20px 10px; transition: all 0.3s;}
+.skills .icons li:hover img{transform: scale(1.1);}
+
+.pp-cover .inner{position: relative; height: 100%;}
+.pp-cover .blur-box{
+  width: 50%;
+ background: radial-gradient(ellipse at center, rgba(248,231,234,1) 0%,rgba(248,231,234,1) 35%,rgba(248,231,234,0) 70%,rgba(248,231,234,0) 100%);
+ position: absolute; top: 30%; left: 30px;
+ animation-name: opacity; animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite;
+ transition: all 0.3s;
+}
+.pp-cover .txt-box{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+text-align: center;}
+.pp-cover .txt-box h3{font-size: 32px;}
+.pp-cover .txt-box p{font-weight: bold;}
+.pp-cover a{display: block; position: absolute; top: 60%; left: 50%; transform: translateX(-50%);
+width: 78px; height: 78px; background-color: #F290A2;}
+.pp-cover a img{width: 24px}
+
+.button-box{position: absolute; top: 65%; left: 50%; transform: translateX(-50%);}
+#hoverButton {
+  width: 78px;
+  height: 78px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: #F290A2; opacity: 0.8;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  
+  animation-name: floatButton;
+  animation-duration: 2s; animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+#hoverButton img{width: 24px;}
+
+.port .inner{position: relative; width: 100%; height: 100%;}
+.twt .blur-box{
+  width: 60%;
+ background: radial-gradient(ellipse at center, rgba(206,205,180,1) 0%,rgba(206,205,180,1) 35%,rgba(206,205,180,0) 70%,rgba(206,205,180,0) 100%);
+ z-index: -9; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);
+ animation-name: opacity; animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite;
+ transition: all 0.3s;
+}
+.port .txt-box{padding-top: 30%; position: absolute; left: 50%; transform: translateX(-50%); text-align: center;}
+.port .txt-box h4{font-size: 35px;}
+.twt .txt-box h4{font-family: 'JeonjuCraftMjB',serif;}
+.port .txt-box span {display: block; font-size: 24px; white-space: nowrap; padding: 10px 0;}
+
+
+.twt .a-box{display: flex; position: absolute; top: 50%; left: 50%; transform: translateX(-50%);}
+.twt .a-box .bx{padding-top: 70px; padding-right: 20px;}
+.twt .a-box .bx img{width: 122px;}
+.twt .a-box .homepage a img.tb,.a-box .homepage img.pc{display: none;}
+.twt .a-box .homepage a img.moba{width: 150px;}
+.twt .a-box p{text-align: center; font-size: 20px; padding-top: 20px;}
+.twt .a-box li a img{transition: all 0.3s;}
+.twt .a-box li:hover a img{transform: scale(1.1);}
+
+.bm .blur-box{
+  width: 60%;
+  background: radial-gradient(ellipse at center, rgba(3,56,160,0.5) 0%,rgba(3,56,160,0.5) 30%,rgba(3,56,160,0) 70%,rgba(3,56,160,0) 100%);
+ z-index: -9; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);
+ animation-name: opacity; animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite;
+ transition: all 0.3s;
+}
+.bm .a-box{display: flex; position: absolute; top: 50%; left: 50%; transform: translateX(-50%);}
+.bm .a-box a img.tb,.a-box a img.pc{display: none;}
+.bm .a-box a img.moba{width: 150px;}
+.bm .a-box p{text-align: center; font-size: 20px; padding-top: 20px;}
+.bm .a-box a img{transition: all 0.3s;}
+.bm .a-box a:hover img{transform: scale(1.1);}
+
+.team1 .blur-box{
+  width: 60%;
+  background: radial-gradient(ellipse at center, rgba(122,162,191,1) 0%,rgba(122,162,191,1) 30%,rgba(122,162,191,0) 70%,rgba(122,162,191,0) 100%);
+ z-index: -9; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);
+ animation-name: opacity; animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite;
+ transition: all 0.3s;
+}
+.team1 .txt-box{padding-top: 25%;}
+.team1 .txt-box > p > span{display: inline-block; width: 15px; height: 15px; background-color: rgba(35,99,146,1); padding: 0; border-radius: 50%;}
+.team1 .txt-box > p > span.off{background-color: rgba(35,99,146,0.5)}
+.team1 .a-box{position: absolute; top: 55%; left: 50%; transform: translateX(-50%);}
+.team1 .a-box img{width: 200px;}
+.team1 .a-box p{text-align: center; font-size: 20px; padding-top: 20px;}
+.team1 .a-box a img{transition: all 0.3s;}
+.team1 .a-box a:hover img{transform: scale(1.1);}
+
+.vidio .blur-box{
+  width: 60%;
+  background: radial-gradient(ellipse at center, rgba(202,109,0,0.5) 0%,rgba(202,109,0,0.5) 30%,rgba(202,109,0,0) 70%,rgba(202,109,0,0) 100%);
+ z-index: -9; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);
+ animation-name: opacity; animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite;
+ transition: all 0.3s;
+}
+
+.vidio .a-box{position: absolute; top: 50%; left: 50%; transform: translateX(-50%);}
+.vidio .a-box img{width: 200px;}
+.vidio .a-box p{text-align: center; font-size: 20px; padding-top: 20px;}
+.vidio .a-box a img{transition: all 0.3s;}
+.vidio .a-box a:hover img{transform: scale(1.1);}
+
+.design2d .blur-box{
+  width: 60%;
+  background: radial-gradient(ellipse at center, rgba(113,0,202,0.5) 0%, rgba(113,0,202,0.5) 30%, rgba(113,0,202,0) 70%, rgba(113,0,202,0) 100%);
+ z-index: -9; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);
+ animation-name: opacity; animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite;
+ transition: all 0.3s;
+}
+.design2d .a-box{position: absolute; top: 50%; left: 50%; transform: translateX(-50%);}
+.design2d .a-box .posters{display: flex; justify-content: space-between;}
+.design2d .a-box a img{transition: all 0.3s; width: 100%;}
+.design2d .a-box a:hover img{transform: scale(1.1);}
+
+
+.indust .blur-box{
+  width: 60%;
+  background: radial-gradient(ellipse at center, rgba(242,144,162,1) 0%,rgba(242,144,162,1) 30%,rgba(242,144,162,0) 70%,rgba(242,144,162,0) 100%);
+ z-index: -9; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);
+ animation-name: opacity; animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite;
+ transition: all 0.3s;
+}
+.indust .a-box{display: flex; justify-content: space-between; position: absolute; top: 60%; left: 50%; transform: translateX(-50%);}
+.indust .a-box a{margin-right: 10px;}
+.indust .a-box a img{transition: all 0.3s; width: 150px;}
+.indust .a-box a:hover img{transform: scale(1.1);}
+.indust .a-box p{text-align: center; font-size: 20px; padding-top: 20px;}
+
+.contact .inner{position: relative;}
+.contact .blur-box{
+width: 60%; height: 60%; margin: 0 auto;
+background: radial-gradient(ellipse at center, rgba(248,231,234,1) 0%,rgba(248,231,234,1) 35%,rgba(248,231,234,0) 70%,rgba(248,231,234,0) 100%);
+animation-name: opacity; animation-duration: 2s; animation-timing-function: ease; animation-iteration-count: infinite;
+transition: all 0.3s;
+}
+.contact .txt-box{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+text-align: center;}
+.contact .txt-box p{font-size: 16px; min-width: 280px; max-width: 338px;}
+.contact .address{margin-top: 20px;}
+.contact .address li a{display: flex; justify-content: center;}
+.contact .address li a img{width: 24px;}
+.contact .address li a address{font-style: normal; margin-left: 10px; line-height: 2;}
+
+/*768px이상*/
+@media screen and (min-width:768px) {
+  #fp-nav{display: block;}
+
+  header{height: 100px;}
+  header nav ul li a{font-size: 18px;}
+
+  .intro .blur-box {width: 50%; height: 50%;}
+  .intro .txt-box h1{font-size: 60px;}
+  .intro .txt-box p{font-size: 24px;}
+
+  .aboutme h2{font-size: 35px; text-align: left;}
+  .aboutme .profile{display: flex; justify-content: center;}
+  .aboutme .profile .photo-box{margin-left: 30px; margin-right: 15%;}
+  .aboutme .profile .photo img{width: 100%;}
+  .aboutme .profile .photo .blur-box{width: 100%; top: 0; left: -20%;}
+  .aboutme .profile .name{font-size: 28px;}
+  .aboutme .profile .name span{font-size: 24px;}
+  .aboutme .profile .b-day{font-size: 16px;}
+  .aboutme .profile .txt-box{text-align: left; font-size: 18px;}
+  .aboutme .tags{margin-top: 60px;}
+  .aboutme .tags ul li{font-size: 18px; margin: 10px;}
+
+  .skills h2{font-size: 35px;}
+  .skills .icons{max-width: 768px;}
+  .skills .icons li img{width: 100px; margin: 40px 20px;}
+
+  .pp-cover .blur-box{top: 20%;}
+  .pp-cover .txt-box h3{font-size: 45px;}
+  .pp-cover .txt-box p{font-size: 20px;}
+  .pp-cover a{top: 70%;}
+  .pp-cover a img{width: 150px;}
+
+  .button-box{top: 70%;}
+  #hoverButton {
+    width: 115px;
+    height: 115px;
+  }
+  #hoverButton img{width: 45px;}
+
+  .port .blur-box{width: 30%;}
+  .port .txt-box{padding-top: 14%}
+  .port .txt-box h4{font-size: 45px;}
+  .port .txt-box span {font-size: 30px;}
+  .port .txt-box p{font-size: 16px; max-width: 320px;}
+  .twt .a-box .bx{padding-top: 50px; padding-right: 30px;}
+  .twt .a-box .bx img{width: 243px;}
+  .twt .a-box .homepage a img.moba{display: none;}
+  .twt .a-box .homepage a img.tb{display: block;}
+
+  .bm .a-box a img.moba{display: none;}
+  .bm .a-box a img.tb{display: block;}
+
+  .team1 .txt-box{padding-top: 10%}
+  .team1 .a-box img{width: 400px;}
+  
+  .vidio .a-box img{width: 400px;}
+
+  .design2d .a-box {width: 300px;}
+
+  .indust .a-box a img{width: 100%;}
+
+  .contact .txt-box p{font-size: 20px; max-width: 424px;}
+  .contact .address li{margin-top: 10px;}
+  .contact .address li a img{width: 36px;}
+  .contact .address li a address{font-size: 16px;}
+
+  
+}
+
+/*1200px이상*/
+@media screen and (min-width:1200px) {
+  #fp-nav ul li .fp-tooltip{display: block; color: #000;}
+  header nav ul li a{font-size: 24px;}
+
+  .intro .blur-box {width: 40%; height: 40%;}
+  .intro .txt-box h1{font-size: 80px;}
+  .intro .txt-box p{font-size: 32px;}
+
+  .aboutme .tags ul li{font-size: 24px;}
+
+  .pp-cover .blur-box{top: 10%;}
+  .pp-cover .txt-box h3{font-size: 60px;}
+  .pp-cover .txt-box p{font-size: 30px;}
+  .port .blur-box{top: 50%; left: 0; transform: translateY(-50%);}
+  .port .txt-box{padding-top: 0; top: 50%; left: 100px; transform: translateY(-50%);
+  text-align: left;}
+  .port .txt-box h4{font-size: 55px;}
+  .port .txt-box span {font-size: 35px;}
+  .port .txt-box p{font-size: 18px; max-width: 400px;}
+  .twt .a-box{right: 20%; transform: translateY(-50%);}
+  .twt .a-box .bx{padding-top: 0;}
+  .twt .a-box .homepage a img.tb{display: none;}
+  .twt .a-box .homepage a img.pc{display: block;}
+
+  .bm .a-box{left: 60%; transform: translateY(-50%);}
+  .bm .a-box a img.tb{display: none;}
+  .bm .a-box a img.pc{display: block;}
+
+  .team1 .a-box{top: 50%; left: 50%; transform: translateY(-50%);}
+  .team1 .a-box img{width: 500px;}
+
+  .vidio .a-box{top: 50%; left: 50%; transform: translateY(-50%);}
+  .vidio .a-box img{width: 500px;}
+  .vidio .txt-box p{font-size: 18px; max-width: 380px;}
+
+  .design2d .a-box{top: 50%; left: 60%; transform: translateY(-50%); width: 400px;}
+  .design2d .a-box img{width: 100%;}
+
+  .indust .a-box{top: 50%; left: 50%; transform: translateY(-50%);}
+  .indust .a-box img{width: 100%;}
+
+  .contact .blur-box{width: 40%; height: 40%;}
+  .contact .txt-box p{font-size: 24px; max-width: 510px;}
+  .contact .address li a img{width: 48px;}
+  .contact .address li a address{font-size: 18px;}
+
+}

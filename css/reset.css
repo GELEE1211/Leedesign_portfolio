@@ -1,0 +1,23 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JeonjuCraftMjB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftMjB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font-family: 'GmarketSansMedium',sans-serif; font-size: 14px; line-height: 1.35; color: #000;}
+a{text-decoration: none; color: #000;}
+ol,ul{list-style: none;}
+img{vertical-align: top; border: 0;}
+
+#wrap{min-width: 320px; overflow: hidden;}
+.inner{max-width: 1400px; margin: 0 auto; padding: 30px;}
