@@ -1,4 +1,15 @@
 @charset "utf-8";
 
+/*모바일 기본*/
+
 /*bx디자인*/
-.bx-wrap{padding: 30px;}
+.bx-wrap{padding: 30px; background-color: #000;}
+.bx-wrap img{text-align: center; width: 100%; overflow: scroll;}
+
+@media screen and (min-width:768px) {
+  /*bx디자인*/
+}
+
+@media screen and (min-width:1200px) {
+  /*bx디자인*/
+}
