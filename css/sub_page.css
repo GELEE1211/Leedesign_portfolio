@@ -3,13 +3,45 @@
 /*모바일 기본*/
 
 /*bx디자인*/
-.bx-wrap{padding: 30px; background-color: #000;}
-.bx-wrap img{text-align: center; width: 100%; overflow: scroll;}
+.bx-header{background-color: #000;}
+.bx-header .back{display: block; color: #fff; padding: 30px; font-size: 18px;}
+.bx-header .back .back-arrow{width: 18px;}
+.bx-wrap{padding: 0 20px 20px; background-color: #000;}
+.bx-wrap img{padding-top: 85px;}
+.bx-wrap img.mobile{text-align: center; width: 100%; overflow: scroll;}
+.bx-wrap img.pc{display: none;}
+
+/*안데르센 동화전시회*/
+.fs-wrap h1{text-align: center; padding: 50px;}
+.fs-wrap .fs-box{position: absolute; left: 50%; transform: translateX(-50%);}
+.fs-wrap .fs-box .zep-page{padding-top: 70px; padding-right: 20px;}
+.fs-wrap .fs-box .zep-page img{width: 122px;}
+.fs-wrap .fs-box .ad-vidio a img.tb,.fs-box .ad-vidio img.pc{display: none;}
+.fs-wrap .fs-box .ad-vidio a img.moba{width: 150px;}
+.fs-wrap .fs-box p{text-align: center; font-size: 20px; padding-top: 20px;}
+.fs-wrap .fs-box li a img{transition: all 0.3s;}
+.fs-wrap .fs-box li:hover a img{transform: scale(1.1);}
 
 @media screen and (min-width:768px) {
   /*bx디자인*/
+  .bx-header .back{padding: 30px; font-size: 30px;}
+  .bx-header .back .back-arrow{width: 30px;}
+  .bx-wrap img.mobile{display: none;}
+  .bx-wrap img.pc{display: block; text-align: center; width: 100%; overflow: scroll;}
+
+  /*안데르센 동화전시회*/
+  .fs-wrap .fs-box{display: flex; top: 50%; }
+  .fs-wrap .fs-box .zep-page{padding-top: 50px; padding-right: 30px;}
+  .fs-wrap .fs-box .zep-page img{width: 243px;}
+  .fs-wrap .fs-box .ad-vidio a img.moba{display: none;}
+  .fs-wrap .fs-box .ad-vidio a img.tb{display: block;}
 }
 
 @media screen and (min-width:1200px) {
   /*bx디자인*/
+
+  /*안데르센 동화전시회*/
+  .fs-wrap .fs-box .zep-page{padding-top: 0;}
+  .fs-wrap .fs-box .ad-vidio a img.tb{display: none;}
+  .fs-wrap .fs-box .ad-vidio a img.pc{display: block;}
 }
