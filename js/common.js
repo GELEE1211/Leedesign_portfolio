@@ -28,5 +28,18 @@ $(document).ready(function(){
     $(".vidio .a-box a img").attr("src", "img/vidio.png")
    });
 
+   $(".ad-vidio a").mouseover(function(){
+    $(".ad-vidio a img.moba").attr("src", "img/team1-mb-on.png")
+    $(".ad-vidio a img.tb").attr("src", "img/team1-tb-on.png")
+    $(".ad-vidio a img.pc").attr("src", "img/team1-pc-on.png")
+   });
+
+   $(".ad-vidio a").mouseleave(function(){
+    $(".ad-vidio a img.moba").attr("src", "img/team1-mb.png")
+    $(".ad-vidio a img.tb").attr("src", "img/team1-tb.png")
+    $(".ad-vidio a img.pc").attr("src", "img/team1-pc.png")
+   });
+
+
 
 });
