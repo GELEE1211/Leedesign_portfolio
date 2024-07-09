@@ -9,7 +9,7 @@
 .bx-header .back{color: #fff;}
 .bx-wrap{padding: 0 20px 20px; background-color: #222;}
 .bx-wrap img.mobile{text-align: center; width: 100%; overflow: scroll;}
-.bx-wrap img.pc{display: none;}
+.bx-wrap img.pc{display: none; overflow: scroll;}
 .bx-wrap img.twt-img{padding-top: 85px;}
 
 /*안데르센 동화전시회*/
