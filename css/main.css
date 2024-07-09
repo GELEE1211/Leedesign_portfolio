@@ -337,7 +337,7 @@ text-align: center;}
 
 }
 
-/*1330이상(풀페이지 nav 글자 겹침 방지)*/
+/*1400이상(풀페이지 nav 글자 겹침 방지)*/
 @media screen and (min-width:1400px){
   #fp-nav ul li .fp-tooltip{display: block; color: #000;}
   header nav ul li a{font-size: 24px;}

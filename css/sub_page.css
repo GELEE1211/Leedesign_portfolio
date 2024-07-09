@@ -5,9 +5,9 @@
 .back .back-arrow{width: 18px;}
 
 /*bx디자인 등 이미지창*/
-.bx-header{background-color: #000;}
+.bx-header{background-color: #222;}
 .bx-header .back{color: #fff;}
-.bx-wrap{padding: 0 20px 20px; background-color: #000;}
+.bx-wrap{padding: 0 20px 20px; background-color: #222;}
 .bx-wrap img.mobile{text-align: center; width: 100%; overflow: scroll;}
 .bx-wrap img.pc{display: none;}
 .bx-wrap img.twt-img{padding-top: 85px;}
