@@ -22,6 +22,7 @@
 .fs-wrap .fs-box .zep-page{padding-top: 60px;}
 .fs-wrap .fs-box .zep-page img{width: 100px;}
 .fs-wrap .fs-box .present img{width: 200px; box-shadow:0 0 5px rgba(0, 0, 0, 0.5);}
+.fs-wrap .fs-box .present.present01 img{margin-top: 20px;}
 .fs-wrap .fs-box .figjam-page,.fs-wrap .fs-box .zep-page,.fs-wrap .fs-box .ad-vidio,.fs-wrap .fs-box .present{text-align: center;}
 .fs-wrap .fs-box .ad-vidio{margin-top: 30px;}
 .fs-wrap .fs-box li a img.tb,.fs-box li img.pc{display: none;}
