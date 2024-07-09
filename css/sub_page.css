@@ -21,7 +21,8 @@
 .fs-wrap .fs-box .figjam-page{padding-top: 60px;}
 .fs-wrap .fs-box .zep-page{padding-top: 60px;}
 .fs-wrap .fs-box .zep-page img{width: 100px;}
-.fs-wrap .fs-box .figjam-page,.fs-wrap .fs-box .zep-page,.fs-wrap .fs-box .ad-vidio{text-align: center;}
+.fs-wrap .fs-box .present img{width: 200px; box-shadow:0 0 5px rgba(0, 0, 0, 0.5);}
+.fs-wrap .fs-box .figjam-page,.fs-wrap .fs-box .zep-page,.fs-wrap .fs-box .ad-vidio,.fs-wrap .fs-box .present{text-align: center;}
 .fs-wrap .fs-box .ad-vidio{margin-top: 30px;}
 .fs-wrap .fs-box li a img.tb,.fs-box li img.pc{display: none;}
 .fs-wrap .fs-box li a img.moba{width: 100px;}
@@ -57,11 +58,14 @@ width: 90%;}
   .fs-wrap .blur-box.team1-sub,.fs-wrap .blur-box.team2-sub{
     width: 250px; top: 80px;
   }
-  .fs-wrap .fs-box{display: flex; top: 40%; align-items:end; justify-content: space-between; width: 70%;}
+  .fs-wrap .fs-box{display: flex; top: 40%; align-items:end; justify-content: space-between; width: 80%;}
   .fs-wrap .fs-box .figjam-page{padding-right: 30px;}
   .fs-wrap .fs-box .figjam-page img{width: 200px;}
   .fs-wrap .fs-box .zep-page{padding-left: 30px;}
   .fs-wrap .fs-box .zep-page img{width: 200px;}
+  .fs-wrap .fs-box .present{padding-right: 30px;}
+  .fs-wrap .fs-box .present img{width: 250px;}
+  .fs-wrap .fs-box .present p{padding-top: 40px;}
   .fs-wrap .fs-box li a img.moba{display: none;}
   .fs-wrap .fs-box li a img.tb{display: block; width: 200px;}
   .fs-wrap .fs-box .ad-vidio{margin-top: 0;}
@@ -83,14 +87,13 @@ width: 90%;}
 
 
   /*안데르센 동화전시회*/
-  .fs-wrap .fs-box{top: 40%; width: 50%;}
+  .fs-wrap .fs-box{top: 40%; width: 60%;}
   .fs-wrap .fs-box .zep-page{padding-top: 0;}
   .fs-wrap .fs-box li a img.tb{display: none;}
   .fs-wrap .fs-box li a img.pc{display: block; width: 250px;}
+  .fs-wrap .fs-box .present img{width: 300px;}
 
  /*코넥 관리자페이지*/
-  .fs-wrap .fs-box.team2-box{width: 40%;}
-
 
   /*2d 디자인 이미지창*/
 }
