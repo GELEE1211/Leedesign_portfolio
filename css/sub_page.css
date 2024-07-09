@@ -35,6 +35,7 @@
   width: 150px; top: 90px;
   
 }
+.fs-wrap .fs-box .figjam-page.present02 p{padding-bottom: 20px;}
 .fs-wrap .fs-box .style-guide .style-guide-img{width: 100px;}
 
 /*2d 디자인 이미지창*/
@@ -74,6 +75,7 @@ width: 90%;}
   .fs-wrap .blur-box.team2-sub{
     width: 250px; top: 80px;
   }
+  .fs-wrap .fs-box .figjam-page.present02 p{padding-bottom: 0;}
   .fs-wrap .fs-box .style-guide .style-guide-img{width: 250px;}
 
   /*2d 디자인 이미지창*/
