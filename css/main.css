@@ -279,7 +279,7 @@ text-align: center;}
 
   .design2d .a-box {width: 300px;}
 
-  .indust .a-box a img{width: 80%;}
+  .indust .a-box a img{width: 90%;}
 
   .contact .txt-box p{font-size: 20px; max-width: 424px;}
   .contact .address li{margin-top: 10px;}
@@ -337,8 +337,8 @@ text-align: center;}
 
 }
 
-/*1400이상(풀페이지 nav 글자 겹침 방지)*/
-@media screen and (min-width:1400px){
+/*1450이상(풀페이지 nav 글자 겹침 방지)*/
+@media screen and (min-width:1450px){
   #fp-nav ul li .fp-tooltip{display: block; color: #000;}
   header nav ul li a{font-size: 24px;}
 }

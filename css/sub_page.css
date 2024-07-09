@@ -68,6 +68,7 @@ width: 90%;}
   .fs-wrap .blur-box.team2-sub{
     width: 250px; top: 80px;
   }
+
   /*2d 디자인 이미지창*/
   .design2d-wrap .poster01{width: 700px;}
   .design2d-wrap .poster02{width: 470px;}
@@ -83,6 +84,10 @@ width: 90%;}
   .fs-wrap .fs-box .zep-page{padding-top: 0;}
   .fs-wrap .fs-box li a img.tb{display: none;}
   .fs-wrap .fs-box li a img.pc{display: block; width: 250px;}
+
+ /*코넥 관리자페이지*/
+  .fs-wrap .fs-box.team2-box{width: 40%;}
+
 
   /*2d 디자인 이미지창*/
 }
