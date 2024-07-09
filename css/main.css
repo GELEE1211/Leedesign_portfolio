@@ -279,7 +279,7 @@ text-align: center;}
 
   .design2d .a-box {width: 300px;}
 
-  .indust .a-box a img{width: 100%;}
+  .indust .a-box a img{width: 80%;}
 
   .contact .txt-box p{font-size: 20px; max-width: 424px;}
   .contact .address li{margin-top: 10px;}
@@ -291,9 +291,6 @@ text-align: center;}
 
 /*1200px이상*/
 @media screen and (min-width:1200px) {
-  #fp-nav ul li .fp-tooltip{display: block; color: #000;}
-  header nav ul li a{font-size: 24px;}
-
   .intro .blur-box {width: 40%; height: 40%;}
   .intro .txt-box h1{font-size: 80px;}
   .intro .txt-box p{font-size: 32px;}
@@ -331,11 +328,17 @@ text-align: center;}
   .design2d .a-box{top: 50%; left: 60%; transform: translateY(-50%); width: 400px;}
   .design2d .a-box img{width: 100%;}
 
-  .indust .a-box{top: 50%; left: 50%; transform: translateY(-50%);}
+  .indust .a-box{top: 50%; left: 40%; transform: translateY(-50%); text-align: center;}
   .indust .a-box img{width: 100%;}
 
   .contact .blur-box{width: 40%; height: 40%;}
   .contact .txt-box p{font-size: 30px; max-width: 628px;}
   .contact .address li a address{font-size: 18px;}
 
+}
+
+/*1330이상(풀페이지 nav 글자 겹침 방지)*/
+@media screen and (min-width:1400px){
+  #fp-nav ul li .fp-tooltip{display: block; color: #000;}
+  header nav ul li a{font-size: 24px;}
 }
