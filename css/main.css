@@ -213,7 +213,7 @@ text-align: center;}
 .contact .txt-box p{font-size: 16px; min-width: 280px; max-width: 338px;}
 .contact .address{margin-top: 20px;}
 .contact .address li a{display: flex; justify-content: center;}
-.contact .address li a img{width: 24px;}
+.contact .address li a img{width: 24px; height: 24px;}
 .contact .address li a address{font-style: normal; margin-left: 10px; line-height: 2;}
 
 /*768px이상*/
@@ -283,7 +283,7 @@ text-align: center;}
 
   .contact .txt-box p{font-size: 20px; max-width: 424px;}
   .contact .address li{margin-top: 10px;}
-  .contact .address li a img{width: 36px;}
+  .contact .address li a img{width: 36px; height: 36px;}
   .contact .address li a address{font-size: 16px;}
 
   
@@ -335,8 +335,7 @@ text-align: center;}
   .indust .a-box img{width: 100%;}
 
   .contact .blur-box{width: 40%; height: 40%;}
-  .contact .txt-box p{font-size: 24px; max-width: 510px;}
-  .contact .address li a img{width: 48px;}
+  .contact .txt-box p{font-size: 30px; max-width: 628px;}
   .contact .address li a address{font-size: 18px;}
 
 }
