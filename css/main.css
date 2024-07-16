@@ -13,6 +13,7 @@
 #fp-nav ul li:first-of-type{display: none;}
 
 .a-box a{display: block; text-align: center;}
+.typedisc{list-style: disc;}
 
 /*모바일 기본*/
 header{width: 100%; height: 80px; position: fixed; top: 0; left: 0; z-index: 99; background-color: #fff;}
